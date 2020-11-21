@@ -46,7 +46,7 @@ public class CreatePerson extends AppCompatActivity {
 
         id = Data.getId();
 
-        p = new Person(id,identification,name,lastName,"");
+        p = new Person(id,identification,name,lastName);
         p.save();
         updatePhoto(id);
         clear();

@@ -5,14 +5,14 @@ public class Person {
     private String identification;
     private String name;
     private String lastName;
-    private String photoId;
 
-    public Person(String id, String identification, String name, String lastName, String photoId) {
+    public Person(){}
+
+    public Person(String id, String identification, String name, String lastName) {
         this.id = id;
         this.identification = identification;
         this.name = name;
         this.lastName = lastName;
-        this.photoId = photoId;
     }
 
     public String getId() {
@@ -47,15 +47,11 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public String getPhotoId() {
-        return photoId;
-    }
-
-    public void setPhotoId(String photoId) {
-        this.photoId = photoId;
-    }
-
     public void save(){
         Data.save(this);
+    }
+
+    public  void delete(){
+        Data.delete(this);
     }
 }

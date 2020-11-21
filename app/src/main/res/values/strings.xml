@@ -20,4 +20,8 @@
     <string name="strIdTitle">Cédula</string>
     <string name="strNamTitle">Nombre</string>
     <string name="strLastNameTitle">Apellido</string>
+    <string name="strDeleteTitle">Eliminar Persona</string>
+    <string name="strDeletePersonMessage">¿Desea eliminar esta persona?</string>
+    <string name="strPositiveOption">Si</string>
+    <string name="strNegativeOption">No</string>
 </resources>
