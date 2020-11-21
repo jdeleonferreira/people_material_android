@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements PersonAdapter.OnP
         Intent intent = new Intent(MainActivity.this, DetailPerson.class);
         Bundle bundle = new Bundle();
         bundle.putString("photoId", p.getPhotoId());
-        bundle.putString("id", p.getId());
+        bundle.putString("id", p.getIdentification());
         bundle.putString("name", p.getName());
         bundle.putString("lastName", p.getLastName());
         intent.putExtra("person",bundle);

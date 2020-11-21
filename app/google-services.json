@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "622998500673",
+    "firebase_url": "https://peopleandroidmaterial.firebaseio.com",
+    "project_id": "peopleandroidmaterial",
+    "storage_bucket": "peopleandroidmaterial.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622998500673:android:d008646ee96f18980dddc0",
+        "android_client_info": {
+          "package_name": "com.example.peoplematerial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622998500673-mo1kut55346lv4h62a3gfb7mk99scorp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWx_mwLb8xWTcnOSAJLNauBoziJ7P5CGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622998500673-mo1kut55346lv4h62a3gfb7mk99scorp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

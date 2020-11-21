@@ -54,9 +54,10 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_width="120sp"
+            android:layout_height="100sp"
+            android:layout_gravity="center_horizontal"
+            tools:srcCompat="@android:drawable/ic_menu_gallery" />
 
         <TableLayout
             android:id="@+id/tblDetail"

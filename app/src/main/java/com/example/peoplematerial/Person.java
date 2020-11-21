@@ -2,12 +2,14 @@ package com.example.peoplematerial;
 
 public class Person {
     private String id;
+    private String identification;
     private String name;
     private String lastName;
     private String photoId;
 
-    public Person(String id, String name, String lastName, String photoId) {
+    public Person(String id, String identification, String name, String lastName, String photoId) {
         this.id = id;
+        this.identification = identification;
         this.name = name;
         this.lastName = lastName;
         this.photoId = photoId;
@@ -19,6 +21,14 @@ public class Person {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getIdentification() {
+        return identification;
+    }
+
+    public void setIdentification(String identification) {
+        this.identification = identification;
     }
 
     public String getName() {

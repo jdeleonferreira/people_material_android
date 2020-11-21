@@ -3,14 +3,10 @@ package com.example.peoplematerial;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -37,7 +33,7 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.PersonView
     @Override
     public void onBindViewHolder(@NonNull PersonViewHolder holder, int position) {
         Person p = people.get(position);
-        holder.id.setText(p.getId());
+        holder.id.setText(p.getIdentification());
         holder.name.setText(p.getName());
         holder.lastName.setText(p.getLastName());
 
