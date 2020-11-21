@@ -9,4 +9,10 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="strCreateTitle">CREAR PERSONAS</string>
+    <string name="strBtnCreate">CREAR</string>
+    <string name="strBtnClear">LIMPIAR</string>
+    <string name="strName">Nombre</string>
+    <string name="strId">Cédula</string>
+    <string name="strLastName">Apellido</string>
 </resources>
