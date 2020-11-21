@@ -15,4 +15,9 @@
     <string name="strName">Nombre</string>
     <string name="strId">Cédula</string>
     <string name="strLastName">Apellido</string>
+    <string name="srtPersonDetail">DETALLE PERSONA</string>
+    <string name="strPersonDetail">DETALLE PERSONA</string>
+    <string name="strIdTitle">Cédula</string>
+    <string name="strNamTitle">Nombre</string>
+    <string name="strLastNameTitle">Apellido</string>
 </resources>
