@@ -57,6 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="save"
             android:text="@string/strBtnCreate" />
 
         <Button
@@ -64,6 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="clear"
             android:text="@string/strBtnClear" />
     </LinearLayout>
 </LinearLayout>

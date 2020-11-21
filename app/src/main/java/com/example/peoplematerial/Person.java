@@ -44,4 +44,8 @@ public class Person {
     public void setPhotoId(String photoId) {
         this.photoId = photoId;
     }
+
+    public void save(){
+        Datos.save(this);
+    }
 }
