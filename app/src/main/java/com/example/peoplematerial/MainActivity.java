@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -13,12 +12,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.View;
 
-import android.view.Menu;
-import android.view.MenuItem;
-
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements PersonAdapter.OnPersonClickListener {
 
     private RecyclerView list;
     private PersonAdapter adapter;
@@ -35,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
         FloatingActionButton fab = findViewById(R.id.fab);
 
         list = findViewById(R.id.lstPeople);
-        people = Datos.getPeople();
+        people = Data.getPeople();
         llm = new LinearLayoutManager(this);
-        adapter = new PersonAdapter(people);
+        adapter = new PersonAdapter(people, this);
         llm.setOrientation(RecyclerView.VERTICAL);
 
         list.setLayoutManager(llm);
@@ -48,6 +44,18 @@ public class MainActivity extends AppCompatActivity {
         Intent intent;
         intent = new Intent(MainActivity.this, CreatePerson.class);
         startActivity(intent);
-        //finish();
+    }
+
+    @Override
+    public void onPersonClick(Person p) {
+
+        Intent intent = new Intent(MainActivity.this, DetailPerson.class);
+        Bundle bundle = new Bundle();
+        bundle.putString("photoId", p.getPhotoId());
+        bundle.putString("id", p.getId());
+        bundle.putString("name", p.getName());
+        bundle.putString("lastName", p.getLastName());
+        intent.putExtra("person",bundle);
+        startActivity(intent);
     }
 }

@@ -46,6 +46,6 @@ public class Person {
     }
 
     public void save(){
-        Datos.save(this);
+        Data.save(this);
     }
 }

@@ -2,7 +2,7 @@ package com.example.peoplematerial;
 
 import java.util.ArrayList;
 
-public class Datos {
+public class Data {
 
     public static ArrayList<Person> people = new ArrayList<>();
 
