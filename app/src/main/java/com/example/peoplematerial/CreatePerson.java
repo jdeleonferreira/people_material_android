@@ -2,8 +2,11 @@ package com.example.peoplematerial;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 
@@ -26,6 +29,7 @@ public class CreatePerson extends AppCompatActivity {
     public void save(View v){
         String id, name, lastName, photoId;
         Person p;
+        InputMethodManager imp = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         id = this.id.getText().toString();
         name = this.name.getText().toString();
         lastName = this.lastName.getText().toString();
@@ -33,6 +37,7 @@ public class CreatePerson extends AppCompatActivity {
         p = new Person(id,name,lastName,"");
         p.save();
         clear();
+        imp.hideSoftInputFromWindow(this.id.getWindowToken(),0);
 
         Snackbar.make(v, "Person was save successfully!", Snackbar.LENGTH_LONG).show();
 
@@ -46,5 +51,11 @@ public class CreatePerson extends AppCompatActivity {
         id.setText("");
         name.setText("");
         lastName.setText("");
+    }
+
+    public void onBackPressed(){
+        finish();
+        Intent i = new Intent(CreatePerson.this,MainActivity.class);
+        startActivity(i);
     }
 }
